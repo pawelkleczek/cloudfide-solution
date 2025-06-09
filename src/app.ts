@@ -28,7 +28,7 @@ v1.get('/market-data/analyze', async (req, res) => {
     const analysis = marketDataService.analyzePriceChange(marketData);
     res.json({ success: true, analysis });
   } catch (error) {
-    res.status(500).json({ error: (error as Error).message });
+    res.status(500).json({ success: false, error: (error as Error).message });
   }
 });
 
