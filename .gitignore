@@ -9,3 +9,5 @@ dist/
 
 # VSCode settings
 .vscode/
+
+requirements.*

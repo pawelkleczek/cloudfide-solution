@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write \"**/*.{ts,js,json}\""
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
+    "dev": "dotenvx run -- nodemon src/server.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
